@@ -1,6 +1,5 @@
 body.full-content, body {
-    /* background: #f4f6f9; */
-    background-image: url('../images/bg.jpg');
+    background-image: url('../images/backgroud.jpg');
     background-size: cover;
     padding-top: 0;
 }
@@ -2911,12 +2910,12 @@ table td[class*=col-], table th[class*=col-] {
     margin: 20px;
     padding: 0;
     border-radius: 2px;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .15)
 }
 
 .box-info.full.with-button .btn{
-    margin: -12px 0; !important;
+    margin: -12px 0 !important;
 }
 
 table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {
@@ -3280,10 +3279,6 @@ p {
     padding-left: 15px;
 }
 
-/*.dashboard-grid-container>.panel-body>table>thead>tr>th:last-child, .dashboard-grid-container>.panel-body>table>tbody>tr>td:last-child{
-    width:15% !important;
-    text-align: center !important;
-}*/
 .dashboard-grid-container > .panel-body > table {
     margin-bottom: 5px;
 }
@@ -3322,12 +3317,10 @@ p {
 #custom-search-input button {
     border: 0;
     background: none;
-    /** belows styles are working good */
     padding: 2px 5px;
     margin-top: 2px;
     position: relative;
     left: -28px;
-    /* IE7-8 doesn't have border-radius, so don't indent the padding */
     margin-bottom: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -3478,10 +3471,6 @@ p {
     width: 120px;
 }
 
-/*.help-button:hover{*/
-/*right:0px;*/
-/*transition:1s;*/
-/*}*/
 
 .modal.left .modal-dialog,
 .modal.right .modal-dialog {
@@ -3523,7 +3512,7 @@ p {
 }
 
 .zmdi-assignment {
-    color: #23e49d !important;
+    color: #010302 !important;
 }
 
 .zmdi-group {

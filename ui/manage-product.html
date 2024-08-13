@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> GSMS </title>
+    <title> Grocery </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -16,7 +16,10 @@
 </head>
 <body class="tooltips">
 <div class="container">
-
+    
+    <!--
+        this div is for upper white line and there are only two button 
+    -->
     <div class="header content rows-content-header">
         <button class="button-menu-mobile show-sidebar">
             <i class="fa fa-bars"></i>
@@ -31,7 +34,10 @@
                                 <i class="zmdi zmdi-view-dashboard zmdi-hc-fw" title="Orders"></i>
                             </a>
                             <a href="manage-product.html">
-                                <i class="zmdi zmdi-assignment zmdi-hc-fw" title="Products"></i>
+                                <i class="zmdi zmdi-format-list-bulleted zmdi-hc-fw" title="Products"></i>
+                            </a>
+                            <a href="order.html">
+                                <i class="zmdi zmdi-account-circle zmdi-hc-fw" title="New order"></i>
                             </a>
                         </ul>
                     </ul>
@@ -39,11 +45,12 @@
             </div>
         </div>
     </div>
+<!-- here this div ends -->
 
     <div class="right content-page">
         <div class="body content rows scroll-y">
             <div class="box-info full" id="taskFormContainer">
-                <h2>Manage Products</h2>
+                <h2><strong>Products</strong></h2>
                 <div class="panel-body pt-0">
                     <div class="row mb-4">
                         <div class="col-sm-12">
@@ -54,7 +61,8 @@
                     </div>
                     <table class="table table-bordered">
                         <thead>
-                        <th>Name</th>
+                        
+                        <th>Product Name</th>
                         <th>Unit</th>
                         <th>Price Per Unit</th>
                         <th style="width: 150px">Action</th>
@@ -68,6 +76,7 @@
         </div>
     </div>
 
+
     <div class="modal fade-scale" id="productModal" role="dialog" data-backdrop="static">
         <div class="modal-dialog ">
             <div class="modal-content">
@@ -76,7 +85,7 @@
                 </div>
                 <div class="modal-body">
                     <form id="productForm">
-                        <input type="hidden" name="id" id="id" value="0">
+                        <input type="hidden" name="id" id="id" value="">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
@@ -101,12 +110,13 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary" id="saveProduct">Save</button>
                 </div>
             </div>
         </div>
     </div>
+  
 </div>
 <script src="js/packages/jquery.min.js"></script>
 <script src="js/custom/common.js"></script>
